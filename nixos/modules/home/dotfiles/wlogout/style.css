@@ -1,0 +1,58 @@
+
+@import "colors.css";
+
+* {
+	background-image: none;
+	box-shadow: none;
+    
+}
+
+window {
+  font-family: FiraCode Nerd Font, monospace;
+  font-size: 12pt;
+	background-color: rgba(0, 0, 0, 0.289);
+}
+
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  font-size: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-size: 50%;
+	color: @primary;
+  text-shadow: none;
+  border-radius: 20px 20px 20px 20px;
+  background-color: @surface;
+  margin: 1px;
+  transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+button:focus, button:active, button:hover {
+	background-color: @primary;
+	outline-style: none;
+    color: @surface;
+    
+}
+
+#lock {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/lock.png"))
+}
+#logout {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/logout.png"))
+}
+#reboot {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/reboot.png"))
+}
+#shutdown {
+    margin: 10px;
+    border-radius: 20px;
+    background-image: image(url("icons/shutdown.png"))
+}

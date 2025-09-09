@@ -1,0 +1,102 @@
+{
+
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  "modules": [
+    "break",
+    {
+      "format": "┌──────────────────────Hardware──────────────────────┐",
+      "type": "custom"
+    },
+    {
+      "key": " PC",
+      "type": "host"
+    },
+    {
+      "key": "│ ├",
+      "showPeCoreCount": true,
+      "type": "cpu"
+    },
+    {
+      "key": "│ ├󰍛",
+      "type": "gpu"
+    },
+    {
+      "key": "│ ├󰍛",
+      "type": "memory"
+    },
+    {
+      "format": "└────────────────────────────────────────────────────┘",
+      "type": "custom"
+    },
+    "break",
+    {
+      "format": "┌──────────────────────Software──────────────────────┐",
+      "type": "custom"
+    },
+    {
+      "key": " OS",
+      "type": "os"
+    },
+    {
+      "key": "│ ├",
+      "text": "echo $USER@$HOSTNAME",
+      "type": "command"
+    },
+    {
+      "key": "│ ├",
+      "type": "kernel"
+    },
+    {
+      "format": "{3}",
+      "key": "│ ├󰍛",
+      "type": "gpu"
+    },
+    {
+      "key": "└ └󰏖",
+      "type": "packages"
+    },
+    "break",
+    {
+      "key": " DE",
+      "type": "de"
+    },
+    {
+      "key": " WM",
+      "type": "wm"
+    },
+    {
+      "key": "│ ├",
+      "type": "terminal"
+    },
+    {
+      "key": "└ └",
+      "type": "shell"
+    },
+    {
+      "format": "└────────────────────────────────────────────────────┘",
+      "type": "custom"
+    },
+    "break",
+
+    "break",
+    {
+      "format": "┌────────────────────Uptime / Age────────────────────┐",
+      "type": "custom"
+    },
+    {
+      "key": "  OS Age",
+      "text": "birth_install=$(stat -c %W /);\ncurrent=$(date +%s);\ntime_progression=$((current - birth_install));\ndays_difference=$((time_progression / 86400));\necho $days_difference days\n",
+      "type": "command"
+    },
+    {
+      "key": "  Uptime",
+      "type": "uptime"
+    },
+    {
+      "format": "└────────────────────────────────────────────────────┘",
+      "type": "custom"
+    },
+    "break"
+  ]
+}
